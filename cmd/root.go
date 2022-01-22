@@ -68,7 +68,7 @@ var rootCmd = &cobra.Command{
 
 		interval, err := pkgCobra.GetInt(cmd, FLAG_INTERVAL)
 		if err != nil {
-			return fmt.Errorf("failed to get separation: %v", err)
+			return fmt.Errorf("failed to get interval: %v", err)
 		}
 
 		l := pkgLog.New(&pkgLog.Config{
